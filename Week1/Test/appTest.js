@@ -3,7 +3,7 @@ const app = require('../app.js');
 
 var test = (num, str) => {
     describe('App', function(){
-        it('Start test', function(){
+        it('Start test case: ' + num, function(){
             assert.equal(app.func(num), str);
         })
     })
