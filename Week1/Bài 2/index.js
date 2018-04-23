@@ -1,9 +1,12 @@
+const OPEN = false;
+const CLOSE = true;
+
 var SttDoor = num => {
     let door = [];
     let stringResulr = "";
     
     for(let i = 1; i <= 100; i++){
-        door[i] = true;
+        door[i] = CLOSE;
     }
 
     for(let i = 1; i <= num; i++){
@@ -19,5 +22,4 @@ var SttDoor = num => {
     return stringResulr;
 }
 
-// console.log(SttDoor(25))
 module.exports.SttDoor = SttDoor;
