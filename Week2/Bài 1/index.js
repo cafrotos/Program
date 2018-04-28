@@ -2,7 +2,7 @@
 
 const alive = 1;
 const dead = 0;
-const dead_aaa = "BBB";
+const dead_aaa = "aaab";
 
 class neiber{
     constructor(stt){
