@@ -2,6 +2,7 @@
 
 const alive = 1;
 const dead = 0;
+const dead_aaa = "aaa";
 
 class neiber{
     constructor(stt){
@@ -26,6 +27,8 @@ class neiber{
         if(this.stt == alive) return "o";
         else return ".";
     }
+
+    getAAA() {}
 }
 
 
