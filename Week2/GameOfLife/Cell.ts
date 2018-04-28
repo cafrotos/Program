@@ -19,4 +19,8 @@ export class Cell{
     public setFriend(friend){
         this.friend = friend;
     }
+
+    public getState(){
+        return this.state;
+    }
 }
