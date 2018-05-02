@@ -44,8 +44,9 @@ export class GameBoard {
 
         for(let x = cell.row - 1; x <= cell.row + 1; x++){
             for(let y = cell.column - 1; y <= cell.column + 1; y++){
-
-                if(x >= 0 && y >= 0 && x!= cell.row && y != cell.column && x < this.ROW && y < this.COL){
+                // console.log(x + " " + y);
+                if(x >= 0 && y >= 0 && (x!= cell.row || y != cell.column) && x < this.ROW && y < this.COL){
+                    
                     if(this.Cells[`${x}_${y}`].state == CELL_STATE.ALIVE) friend++;
                 
                 }
@@ -83,9 +84,7 @@ export class GameBoard {
         }
     }
 
-    public run() {
-        this.PrintGameboard();
-        console.log();
+    public run(NumberOfGeneration) {
         this.countFriend();
         this.nextGenerationGrid();
         this.PrintGameboard();
